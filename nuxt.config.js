@@ -17,7 +17,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
 
@@ -30,14 +30,17 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'vuetify/src/stylus/main.styl'
+    'vuetify/src/stylus/main.styl',
+    'iview/dist/styles/iview.css',
+    'material-icons/iconfont/material-icons.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/iview',
+    '@/plugins/firebase'
   ],
 
   /*
