@@ -52,7 +52,13 @@ export default {
                 this.$auth.signInWithEmailAndPassword(this.email, this.password)
                 .then((res)=>{
                     this.loading = false
-                    this.$store.commit('user/setCreds', res.user)
+                    let user = {
+                        email: res.user.email,
+                        uid: res.user.uid,
+                        phoneNumber: res.user.phoneNumber,
+                        photoURL: res.user.photoURL,
+                    }
+                    this.$store.commit('user/setCreds', user)
                     this.$router.push('/')
                 })
                 .catch((error)=>{

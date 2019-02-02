@@ -1,6 +1,11 @@
 
 export const state = () => ({
-    credentials: {}
+    credentials: {
+        email: '',
+        uid: '',
+        phoneNumber: '',
+        photoURL: '',
+    }
 })
 
 export const getters = {
