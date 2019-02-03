@@ -12,12 +12,16 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "cookie": "^0.3.1",
     "express": "^4.15.3",
     "firebase": "^5.8.2",
     "iview": "^3.2.2",
+    "js-cookie": "^2.2.0",
     "material-icons": "^0.2.3",
     "nuxt": "^1.0.0",
-    "vuetify": "^1.0.19"
+    "vue2-transitions": "^0.2.3",
+    "vuetify": "^1.0.19",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

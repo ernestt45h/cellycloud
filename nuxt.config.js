@@ -40,7 +40,9 @@ module.exports = {
   */
   plugins: [
     '@/plugins/iview',
-    '@/plugins/firebase'
+    '@/plugins/firebase',
+    '@/plugins/vue2-transitions',
+    '@/plugins/persistedStated',
   ],
 
   /*

@@ -11,6 +11,10 @@ export const state = () => ({
 export const getters = {
     getEmail(state){
         return state.credentials.email
+    },
+
+    isAuth(state){
+        return state.credentials.uid ? true : false 
     }
 }
 

@@ -1,13 +1,15 @@
 <template>
-    <div >
-        <Row id="form" type="flex" justify="center" align="middle">
-            <Col :xs="20" :sm="16" :md="8" :lg="6">
-                <Card class="card">
-                    <nuxt/>
-                </Card>
-            </Col>
-        </Row>
-    </div>
+    <fade-transition>
+        <div >
+            <Row id="form" type="flex" justify="center" align="middle">
+                <Col :xs="20" :sm="16" :md="8" :lg="6">
+                    <Card class="card">
+                        <nuxt/>
+                    </Card>
+                </Col>
+            </Row>
+        </div>
+    </fade-transition>
 </template>
 <script>
 export default {
