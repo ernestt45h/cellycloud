@@ -33,6 +33,6 @@
 const API = require('./apis')
 API().then(app=>{
   app.listen(80, ()=>{
-    console.log('running');
+    console.log('running cellycloud on http://localhost');
   })
 })
