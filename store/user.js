@@ -24,5 +24,11 @@ export const mutations = {
     }
 }
 
+export const actions = {
+    async logout({commit}){
+        commit('setCreds', {})
+    }
+}
+
 export const strict = false
 
