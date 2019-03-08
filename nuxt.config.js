@@ -24,13 +24,12 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: { color: '#2db7f5' },
 
   /*
   ** Global CSS
   */
   css: [
-    'vuetify/src/stylus/main.styl',
     'iview/dist/styles/iview.css',
     'material-icons/iconfont/material-icons.css'
   ],
@@ -59,6 +58,10 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+
+  router: {
+    linkActiveClass: 'active'
+  },
   /*
   ** Build configuration
   */

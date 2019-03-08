@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>Login</h1>
+        <h1>Sign Up</h1>
         <Divider></Divider>
-        <Alert v-if="error" type="warning" show-icon>
+        <Alert v-if="error" type="warning" closable show-icon>
             A warning prompt
             <div style="text-align: center" slot="desc">
                 {{error.message}}
@@ -13,15 +13,18 @@
                 <Input v-model="email" placeholder="Email" type="email"/>
             </Col>
             <Col class="input" :xs="20">
-                <Input v-model="password" placeholder="Password" :type="passwordType">
-                    <Button @click="togglePassword" slot="append" icon="md-eye"></Button>
+                <Input v-model="password" placeholder="Password">
                 </Input>
             </Col>
             <Col class="input" :xs="20">
-                <Button @click="loginUser" :loading="loading" long type="info" icon="md-log-in">Log in</Button>
+                <Input v-model="repassword" placeholder="Confirm password">
+                </Input>
+            </Col>
+            <Col class="input" :xs="20">
+                <Button @click="loginUser" :loading="loading" long type="info" icon="md-log-in">Sign Up</Button>
             </Col>
             <Divider></Divider>
-            <p>Don't have an account <nuxt-link to="auth/signup">Sign Up</nuxt-link></p>
+            <p>Already a user? <nuxt-link to="/auth">Sign In</nuxt-link></p>
         </Row>
     </div>
 </template>
@@ -30,9 +33,9 @@ export default {
     layout: 'form',
     data() {
         return {
-            email: 'dev@mail.com',
-            password: 'developer',
-            passwordType: 'password',
+            email: '',
+            password: '',
+            repassword: '',
             error: '',
             loading: false
         }
